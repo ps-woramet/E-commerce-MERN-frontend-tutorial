@@ -40,8 +40,7 @@ export default function ShoppingCart() {
 
   //add to cart handler
   const changeOrderItemQtyHandler = (productId, qty) => {
-    const qtyint = parseInt(qty);
-    dispatch(changeOrderItemQty({productId, qtyint}));
+    dispatch(changeOrderItemQty({productId, qty}));
     dispatch(getCartItemsFromLocalStorageAction());
   };
   
